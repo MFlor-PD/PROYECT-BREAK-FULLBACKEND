@@ -1,6 +1,6 @@
 # PROYECT-BREAK-FULLBACKEND
 Creacion de API para una Tienda de ropa
-# 👕 Amason - Tienda de Ropa Online
+# 👕 Tienda de Ropa Online
 
 Amason es una aplicación web construida con Node.js, Express y MongoDB que permite gestionar una tienda de ropa desde el lado del cliente y del administrador. Además, incluye una API REST, autenticación, subida de imágenes a Cloudinary, tests automáticos y documentación con Swagger.
 
@@ -23,8 +23,7 @@ Amason es una aplicación web construida con Node.js, Express y MongoDB que perm
 1. Clona este repositorio:
 
 ```bash
-git clone https://github.com/tuusuario/amason.git
-cd amason
+git https://github.com/MFlor-PD/PROYECT-BREAK-FULLBACKEND
 ```
 
 2. Instala las dependencias:
@@ -38,13 +37,13 @@ npm install
 Crea un archivo `.env` en la raíz del proyecto con el siguiente contenido:
 
 ```env
-PORT=3000
-MONGO_URI=mongodb+srv://<usuario>:<clave>@cluster.mongodb.net/amason
-ADMIN_USER=admin
-ADMIN_PASSWORD=admin123
-CLOUDINARY_CLOUD_NAME=xxxx
-CLOUDINARY_API_KEY=xxxx
-CLOUDINARY_API_SECRET=xxxx
+
+MONGO_URI=
+ADMIN_USER=
+ADMIN_PASSWORD=
+CLOUDINARY_CLOUD_NAME=
+CLOUDINARY_API_KEY=
+CLOUDINARY_API_SECRET=
 ```
 
 ---
@@ -92,24 +91,28 @@ Una vez logueado podrás:
 │   └── cloudinary.js
 ├── controllers
 │   ├── productController.js
+|   ├── productApiControllers.js
 │   └── authController.js
 ├── models
 │   └── Product.js
 ├── routes
 │   ├── productRoutes.js
+|   ├── productApiRoutes.js
 │   └── authRoutes.js
 ├── middlewares
-│   └── authMiddleware.js
+|   ├── uploadMiddlewares.js
+│   └── authMiddleware.js    
 ├── helpers
-│   ├── template.js
-│   ├── getNavBar.js
-│   └── baseHtml.js
-├── public
-│   └── css
-│       └── styles.css
+│   ├── baseHtml.js
+|   ├── getEditProductForm.js
+|   ├── getNavBar.js
+│   ├── getProductCards.js
+|   ├── getProductDetails.js
+│   └── getProductForm.js
 ├── test
 │   └── productController.test.js
-├── views (si aplica SSR con HTML)
+├── docs
+│   └── swagger.json
 ├── index.js
 ├── .env
 └── README.md
@@ -173,4 +176,4 @@ Ahí encontrarás toda la documentación interactiva de la API.
 
 ## 🧵 Autor
 
-Desarrollado por [Florencia](https://github.com/tuusuario)
+Desarrollado por [Florencia](https://github.com/MFlor-PD/PROYECT-BREAK-FULLBACKEND)
