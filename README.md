@@ -110,7 +110,8 @@ Una vez logueado podrás:
 |   ├── getProductDetails.js
 │   └── getProductForm.js
 ├── test
-│   └── productController.test.js
+│   ├── productController.test.js
+|   └──POST.test.js
 ├── docs
 │   └── swagger.json
 ├── index.js
@@ -132,7 +133,7 @@ PUT     /api/products/:id (auth)
 DELETE  /api/products/:id (auth)
 ```
 
-> Las rutas protegidas requieren autenticación básica (`admin:admin123`).
+> Las rutas protegidas requieren autenticación básica.
 
 ---
 
